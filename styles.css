@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -27,16 +26,14 @@ nav a {
     padding: 14px 20px;
 }
 
-/* Hover normal */
 nav a:hover {
     background-color: #21f700;
 }
 
-/* Enlace activo (sección seleccionada) */
 nav a.active {
-    background-color: #21f700; /* mismo color que hover o el que prefieras */
+    background-color: #21f700;
     font-weight: bold;
-    border-bottom: 3px solid #fff; /* opcional para resaltar */
+    border-bottom: 3px solid #fff;
 }
 
 main {
@@ -52,260 +49,39 @@ footer {
     margin-top: auto;
 }
 
-.cuadro-mision, .cuadro-vision {
-    border: 2px solid #004080;   /* Borde azul oscuro */
-    background-color: #f0f8ff;   /* Fondo claro */
-    padding: 12px;
-    margin: 15px auto;
-    border-radius: 6px;          /* Bordes redondeados */
-    width: 60%;                  /* Más pequeño y centrado */
-    box-shadow: 1px 1px 6px rgba(0,0,0,0.2); /* Sombra ligera */
-    text-align: justify;
-}
-
-.titulo-mision {
-    color: #006600;              /* Verde para resaltar la misión */
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.titulo-vision {
-    color: #800080;              /* Morado para resaltar la visión */
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-
-/* Contenedor horizontal */
-.contact-container {
-    display: flex;
-    justify-content: space-around; /* espacio entre cuadros */
-    align-items: flex-start;
-    gap: 20px; /* separación entre cuadros */
-    margin: 20px auto;
-    width: 90%;
-}
-
-/* Cuadros individuales */
-.cuadro-contacto, .cuadro-info {
-    flex: 1; /* cada cuadro ocupa mismo espacio */
-    border: 2px solid #0066cc;
-    background-color: #f9f9f9;
+/* Cuadros Misión y Visión */
+.cuadro-mision {
+    background: #fdf6e3;
+    border: 3px solid #a67c52;
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-}
-
-/* Títulos */
-.cuadro-contacto h3, .cuadro-info h3 {
-    text-align: center;
-    color: #004080;
-}
-
-/* Formulario */
-.cuadro-contacto label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.cuadro-contacto input,
-.cuadro-contacto textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.cuadro-contacto button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.cuadro-contacto button:hover {
-    background-color: #004080;
-}
-
-
-.galeria {
-    margin: 40px auto;
-    text-align: center;
-    font-family: 'Georgia', serif; /* tipografía clásica */
-    color: #4b2e2e; /* tono marrón vintage */
-}
-
-.galeria h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #a67c52;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.galeria-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.galeria-grid figure {
-    width: 220px;
-    background: #fdf6e3; /* tono pergamino */
-    border: 2px solid #a67c52;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
+    font-family: 'Verdana', sans-serif;
+    color: #333;
     transition: transform 0.3s ease;
-    cursor: pointer;
 }
+.cuadro-mision:hover { transform: scale(1.03); }
 
-.galeria-grid figure:hover {
-    transform: scale(1.05);
-}
-
-/* Nombre arriba de la imagen */
-.galeria-grid figcaption {
-    font-size: 14px;
-    font-weight: bold;
-    color: #5a3d2e;
-    margin-bottom: 8px;
-}
-
-/* Imagen debajo del nombre */
-.galeria-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    filter: sepia(40%) contrast(90%); /* efecto vintage */
-}
-
-
-.huellita {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    background-image: url('imagenes/huella.png'); /* tu imagen de huella */
-    background-size: cover;
-    pointer-events: none; /* no bloquea clics */
-    transform: translate(-50%, -50%);
-    opacity: 0.8;
-    animation: fadeOut 1s forwards;
-}
-
-@keyframes fadeOut {
-    from { opacity: 0.8; }
-    to { opacity: 0; }
-}
-
-nav a.active {
-    background-color: #21f700; /* verde permanente */
-    font-weight: bold;
-    border-bottom: 3px solid #fff; /* opcional */
-}
-
-
-/* Fondo animado */
-.fondo-animado {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* detrás del contenido */
-}
-
-/* Íconos flotantes */
-.icono {
-    position: absolute;
-    font-size: 2rem;
-    opacity: 0.7;
-    animation: flotar 12s linear infinite;
-}
-
-/* Animación */
-@keyframes flotar {
-    0% {
-        transform: translateY(100vh) rotate(0deg);
-        opacity: 0;
-    }
-    20% { opacity: 1; }
-    100% {
-        transform: translateY(-10vh) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-/* Posiciones iniciales distintas */
-.icono:nth-child(1) { left: 10%; animation-delay: 0s; }
-.icono:nth-child(2) { left: 30%; animation-delay: 2s; }
-.icono:nth-child(3) { left: 50%; animation-delay: 4s; }
-.icono:nth-child(4) { left: 70%; animation-delay: 6s; }
-.icono:nth-child(5) { left: 85%; animation-delay: 8s; }
-
-
-.galeria {
-    margin: 40px auto;
-    text-align: center;
-    font-family: 'Georgia', serif; /* tipografía clásica */
-    color: #4b2e2e;
-}
-
-.galeria h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #a67c52;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-
-.galeria-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.galeria-grid figure {
-    width: 250px;
-    background: #fdf6e3; /* tono pergamino */
-    border: 2px solid #a67c52;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+.cuadro-vision {
+    background: #e8f0e3;
+    border: 3px solid #6b8e23;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
+    font-family: 'Verdana', sans-serif;
+    color: #333;
     transition: transform 0.3s ease;
-    cursor: pointer;
 }
+.cuadro-vision:hover { transform: scale(1.03); }
 
-.galeria-grid figure:hover {
-    transform: scale(1.05);
-}
-
-.galeria-grid figcaption {
-    font-size: 14px;
-    font-weight: bold;
-    color: #5a3d2e;
-    margin-bottom: 8px;
-}
-
-.galeria-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
-    filter: sepia(40%) contrast(90%); /* efecto vintage */
+.cuadro-mision p, .cuadro-vision p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 /* Estilo general de títulos */
@@ -320,69 +96,90 @@ h3 {
     position: relative;
 }
 
-
-
-/* Cuadro Misión */
-.cuadro-mision {
-    background: #fdf6e3; /* tono pergamino */
-    border: 3px solid #a67c52;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
-    font-family: 'Verdana', sans-serif;
-    color: #333;
+/* Galería estilo vintage */
+.galeria {
+    margin: 40px auto;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #4b2e2e;
+}
+.galeria h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #a67c52;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.galeria-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.galeria-grid figure {
+    width: 250px;
+    background: #fdf6e3;
+    border: 2px solid #a67c52;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.galeria-grid figure:hover { transform: scale(1.05); }
+.galeria-grid figcaption {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5a3d2e;
+    margin-bottom: 8px;
+}
+.galeria-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    filter: sepia(40%) contrast(90%);
 }
 
-.cuadro-mision:hover {
-    transform: scale(1.03);
+/* Fondo animado */
+.fondo-animado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
 }
-
-/* Cuadro Visión */
-.cuadro-vision {
-    background: #e8f0e3; /* tono verde suave */
-    border: 3px solid #6b8e23;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    box-shadow: 6px 6px 15px rgba(0,0,0,0.3);
-    font-family: 'Verdana', sans-serif;
-    color: #333;
-    transition: transform 0.3s ease;
-}
-
-.cuadro-vision:hover {
-    transform: scale(1.03);
-}
-
-/* Texto dentro de los cuadros */
-.cuadro-mision p, .cuadro-vision p {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-/* Íconos flotantes mucho más grandes */
 .icono {
     position: absolute;
-    font-size: 6rem; /* antes 2–3rem, ahora mucho más grande */
+    font-size: 6rem; /* tamaño grande */
     opacity: 0.7;
     animation: flotar 12s linear infinite;
 }
-
-/* Animación */
 @keyframes flotar {
-    0% {
-        transform: translateY(100vh) rotate(0deg);
-        opacity: 0;
-    }
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
     20% { opacity: 1; }
-    100% {
-        transform: translateY(-10vh) rotate(360deg);
-        opacity: 0;
-    }
+    100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
 }
+.icono:nth-child(1) { left: 10%; animation-delay: 0s; }
+.icono:nth-child(2) { left: 30%; animation-delay: 2s; }
+.icono:nth-child(3) { left: 50%; animation-delay: 4s; }
+.icono:nth-child(4) { left: 70%; animation-delay: 6s; }
+.icono:nth-child(5) { left: 85%; animation-delay: 8s; }
 
+/* Huellitas que siguen el cursor */
+.huellita {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('imagenes/huella.png');
+    background-size: cover;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    animation: fadeOut 1s forwards;
+}
+@keyframes fadeOut {
+    from { opacity: 0.8; }
+    to { opacity: 0; }
+}
